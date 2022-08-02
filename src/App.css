@@ -36,16 +36,66 @@
     transform: rotate(360deg);
   }
 }
+.parent_main_section select {
+  margin: 0 0 0 20px;
+}
+.parent_main_section .main_total {
+  border: 2px solid #6DE081 ;
+  padding: 40px 0;
+  margin: 0 10px 0 0;
+}
+.parent_main_section .main_cases {
+  border: 2px solid red;
+  padding: 40px 0;
+  margin: 0 0 0 10px;
+}
+.main_heading_covid {
+  text-align: center;
+  margin: 40px auto;
+}
+.main_heading_covid h1 {
+  border-bottom: 2px solid red;
+  width: 30%;
+  margin: 40px auto;
+}
+.main_heading_covid a {
+  background-color: #0d6efd;
+  padding: 20px 40px;
+  color: white;
+  text-decoration: none;
+}
+.main_heading_covid a:hover {
+  color: #ffff;
+}
+.main_US_data h1 {
+  border-bottom: 2px solid red;
+  width: 30%;
+  margin: 50px auto;
 
+}
+.main_US_data a {
+  background-color: #0d6efd;
+  padding: 20px 40px;
+  color: white;
+  text-decoration: none;
+}
+.main_US_data a:hover{
+  color: #ffff;
+}
+.main_US_data {
+  margin: 40px 0;
+}
 .table {
   width: 100%;
   padding: 20px 40px;
-    margin: 5px 0;
     background-color: #55555557;
+    margin: 40px 0 0 0;
+
 }
 .Cases {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 70px 0;
 }
 .main_total {
   display: flex;
@@ -58,3 +108,196 @@
 .Cases h2 {
   padding: 10px 30px;
 }
+
+.main_date_section p {
+  font-size: 24px;
+  padding: 20px 0;
+}
+
+/* for styling */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'montserrat';
+}
+
+
+#main-section
+{
+ text-transform: uppercase;
+ padding-top: 5%;
+ padding-bottom: 5%;
+}
+
+
+
+#left
+{
+  padding: 60px;;
+}
+
+
+#importance-section
+{
+  padding-bottom: 5%;
+}
+
+#covid-img, #doctor-img
+{
+  width: 100%;
+  height: 500px;
+}
+#importace-heading
+{
+  text-transform: uppercase;
+}
+
+#home-lable
+{
+  color:#6DE081;
+  text-transform: uppercase;
+}
+
+hr
+{
+  background-color: #6DE081;
+  height: 5px;
+}
+
+.count
+{
+  font-size: 30px;
+  color:#6DE081;
+  position: relative;
+  top:4px;
+}
+
+
+.covid-info
+{
+  margin: 0 auto;
+}
+
+select
+{
+  padding: 10px 50px 10px 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid gray; 
+  cursor: pointer;
+  width: 30%;
+  outline: none;
+  font-size: 20px;
+  margin: 0 0 0 30px;
+}
+
+.covid-icon
+{
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+}
+
+#confirm
+{
+  background-color: #FBF2E9;
+}
+
+#active
+{
+  background-color: #FAECB3;
+}
+#deaths
+{
+  background-color: #F4C7C3;
+}
+#recovered
+{
+  background-color: #C8E6C9;
+}
+
+.precautions-icon
+{
+  width:100%;
+  height: 200px;
+}
+
+#total-cases
+{
+  background-color: #E3645C;
+  border: none;
+}
+#new-cases
+{
+  background-color: #6DE081;
+  border: none;
+}
+
+.count-cases
+{
+  font-family: 'roboto'
+}
+
+.display-data-green
+{
+  border: 2px solid #6DE081 !important;
+}
+
+.display-data-red
+{
+  border: 2px solid red !important;
+}
+select {
+  border: 1px solid #555;
+margin: 0 0 0 30px;
+padding: 20px;
+}   
+
+@media screen and (max-width:768px)
+{
+  html, body {
+      overflow-x:hidden ;
+    } 
+
+    #main-section
+    {
+        padding-top: 0;
+    }
+    .display-data-green
+    {
+        margin-bottom: 20px;
+    }
+    h1
+    {
+        font-size: 26px;
+    }
+    h2
+    {
+        font-size: 24px;
+    }
+    h3
+    {
+        font-size: 22px;
+    }
+    .Cases {
+      display: block;
+      margin: 20px 0;
+    }
+    .main_cases {
+      margin: 20px 0 !important;
+    }
+
+    @media only screen and (max-width: 530px) {
+      .parent_main_section .main_total {
+        display: block;
+      }
+      .parent_main_section .main_cases {
+        display: block;
+      }
+    }
+}
+
+/* end styling */

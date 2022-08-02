@@ -22,10 +22,9 @@ export const BitbucketApi = () => {
   }, []);
 
   return (
-    <div>
+    <div className="main_US_data">
       <h1>Covid Data of United States</h1>
-      {/* <a href="/worldData">All Data with Country</a> */}
-      <Link to='/worldData'>All Data with Country</Link>
+      <Link to='/'>For World Data</Link>
     
         {covidData.map((data, key) => {
           return (
